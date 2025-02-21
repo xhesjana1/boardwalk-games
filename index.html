@@ -159,7 +159,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img src="assets/images/services-3.webp" class="card-img-top">
+                        <img src="assets/images/services-3.webp" class="card-img-top" alt="A chess tournament being held at Boardwalk Games">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Events</h3>
                             <p class="card-text">
@@ -239,7 +239,7 @@
                         </tbody>
                     </table>
                     <p class="student-discount text-center">Get 20% off with valid student ID</p>
-                    </div>
+                </div>
                 <!-- Book Now button aligned at the bottom -->
                 <div class="col-12 d-flex justify-content-center my-4">
                     <a href="booking.html" class="btn custom-button-outline">Book now</a>
@@ -322,28 +322,27 @@
         crossorigin="anonymous"></script>
     <!--Fontawesome Kit-->
     <script src="https://kit.fontawesome.com/bede36f393.js" crossorigin="anonymous"></script>
-    
-<!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
-<script>
-    document
-        .querySelectorAll(".navbar-collapse .nav-link")
-        .forEach((link) => {
-            link.addEventListener("click", function (e) {
-                let section = document.querySelector(e.target.getAttribute("href"));
-                if (section) {
-                    e.preventDefault(); // Prevent default anchor click behavior
-                    let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
-                    window.scroll({
-                        top: section.offsetTop - navbarHeight, // Adjust for navbar height
-                        behavior: "smooth",
-                    });
-                    document
-                        .querySelector(".navbar-collapse")
-                        .classList.remove("show"); // Collapse navbar
-                }
+    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+    <script>
+        document
+            .querySelectorAll(".navbar-collapse .nav-link")
+            .forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    let section = document.querySelector(e.target.getAttribute("href"));
+                    if (section) {
+                        e.preventDefault(); // Prevent default anchor click behavior
+                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                        window.scroll({
+                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                            behavior: "smooth",
+                        });
+                        document
+                            .querySelector(".navbar-collapse")
+                            .classList.remove("show"); // Collapse navbar
+                    }
+                });
             });
-        });
-</script>
+    </script>
 
 </body>
 
