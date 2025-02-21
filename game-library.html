@@ -43,7 +43,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="events.html">Events</a>
-                      </li>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="game-library.html">Games</a>
                     </li>
@@ -106,7 +106,7 @@
 
     <!--main element to hold all key sections of the game library page, it is not part of the grid structure-->
     <main>
-        
+
         <!-- New Games section -->
         <section id="new-games" class="container section">
             <div class="row">
@@ -127,7 +127,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/new-games-2.webp" alt="Mystic Woods board game box">
+                        <img class="card-img-top" src="assets/images/new-games-2.webp"
+                            alt="Mystic Woods board game box">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Mystic Woods</h3>
                             <p class="card-text">Enter the enchanted forest of Mystic Woods. Combine spells, gather
@@ -139,7 +140,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/new-games-3.webp" alt="Captain's Gambit board game box">
+                        <img class="card-img-top" src="assets/images/new-games-3.webp"
+                            alt="Captain's Gambit board game box">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Captain's Gambit</h3>
                             <p class="card-text">Engage in battles, form fleeting alliances, and navigate treacherous
@@ -151,7 +153,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/new-games-4.webp" alt="Critter Quest board game box">
+                        <img class="card-img-top" src="assets/images/new-games-4.webp"
+                            alt="Critter Quest board game box">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Critter Quest</h3>
                             <p class="card-text">Solve simple puzzles, collect magical gems, and help friends along the
@@ -172,7 +175,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/fav-games-1.webp" alt="Settlers of Catan board game">
+                        <img class="card-img-top" src="assets/images/fav-games-1.webp"
+                            alt="Settlers of Catan board game">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Settlers of Catan</h3>
                             <p class="card-text">Picture yourself in the era of discoveries: after a long voyage of
@@ -196,7 +200,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/fav-games-3.webp" alt="Exploding Kittens card game">
+                        <img class="card-img-top" src="assets/images/fav-games-3.webp"
+                            alt="Exploding Kittens card game">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Exploding Kittens</h3>
                             <p class="card-text">Exploding Kittens is a kitty-powered version of Russian Roulette.
@@ -222,8 +227,66 @@
                 </div>
             </div>
         </section>
-    </main>
 
+        <!--Form to reserve a board game-->
+        <section id="reserve-game" class="section container mb-">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <h2 class="display-6 text-center">Reserve a game</h2>
+                    <p>
+                        Reserve a board game for your next visit to Boardwalk Games. Pick
+                        your challenge, and let the adventure begin! Fill out your details
+                        and preferred game below, and we'll have it set aside for you when
+                        you arrive.
+                    </p>
+
+                    <!--Reserve game form-->
+                    <!--Action set on the form to provide users with feedback submition-->
+                    <form action="success.html" method="GET">
+                        <div class="row">
+                            <div class="col-12 col-lg-4 mb-3">
+                                <label for="full-name" class="form-label">Full name</label>
+                                <input id="full-name" type="text" class="form-control" name="full-name" required>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-3">
+                                <label for="phone-number" class="form-label">Phone number</label>
+                                <input id="phone-number" type="number" class="form-control" name="phone-number"
+                                    required>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input id="email" type="email" class="form-control" name="email" required>
+                            </div>
+                            <div class="col-12 col-lg-8 mb-3">
+                                <label for="game-selection" class="form-label">Select game</label>
+                                <select id="game-selection" class="form-select" name="game-selection" required>
+                                    <!-- value="" makes this option a placeholder and won't be accepted as a valid selection, 
+                                                ensuring the required attribute on the <select> element works -->
+                                    <option value="" selected>Select game</option>
+                                    <option value="galaxy-pioneers">Galaxy Pioneers</option>
+                                    <option value="mystic-woods">Mystic Woods</option>
+                                    <option value="captains-gambit">Captain's Gambit</option>
+                                    <option value="critter-quest">Critter Quest</option>
+                                    <option value="setters-of-catan">Settlers of Catan</option>
+                                    <option value="monopoly">Monopoly</option>
+                                    <option value="exploding-kittens">Exploding Kittens</option>
+                                    <option value="cluedo">Cluedo</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-3">
+                                <label for="date" class="form-label">Requested date</label>
+                                <input id="date" type="date" class="form-control" name="date" required>
+                            </div>
+                            <div class="col-12 text-end">
+                                <button type="submit" class="btn custom-button-outline mt-3">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+         
     <!--Footer / contact section-->
     <!--mt-auto added to push footer to the bottom of the page-->
     <footer id="contact" class="mt-auto">
@@ -244,12 +307,14 @@
                         <i class="fa-regular fa-paper-plane"></i> info@boardwalk-games.co
                     </p>
                     <div class="social-links my-4">
-                        <a href="https://www.instagram.com" target="_blank" aria-label="Visit our Instagram page (opens in a new tab)"
-                            rel="noopener"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook page (opens in a new tab)"
-                            rel="noopener"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a href="https://www.x.com" target="_blank" aria-label="Visit our X feed (opens in a new tab)" rel="noopener"><i
-                                class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"
+                            aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"
+                            aria-label="Visit our Facebook page (opens in a new tab)" rel="noopener"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.x.com" target="_blank" aria-label="Visit our X feed (opens in a new tab)"
+                            rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
                     </div>
                 </div>
                 <!--Opening times-->

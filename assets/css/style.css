@@ -107,6 +107,9 @@ h2 {
     font-size: 0.8rem;
 }
 
+#events .table {  font-size: 0.7rem;
+}
+
 /* Game library cards */
 
 #new-games .card,
